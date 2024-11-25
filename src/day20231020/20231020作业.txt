@@ -1,0 +1,161 @@
+1、	关于被私有、受保护的访问控制符private、protected修饰的成员变量，以下说法正确的是（ A/C ）。
+A、可以被三种类所引用：该类自身、与它在同一个包中的其他类、在其他包中的该类的子类	(或者)
+B、可以被两种类访问和引用：该类本身、该类的所有子类
+C、只能被该类自身所访问和修改		(并且)
+D、只能被同一个包中的类访问 
+2、	以下代码段将创建（ B ）个对象。
+String s1="bc";
+String s2="bc";
+A、0    B、1      C、2      D、3
+3、	编译并运行以下程序，以下描述哪个选项是正确的（ C ）
+1： class X{
+2： protected String toString(){
+3： return super.toString();}
+4： }
+A、编译通过运行无异常        B、编译通过但运行时出错 
+C、行2出错，不能成功编译    D、不能成功编译，行3出错
+4、	下列关于修饰符混用的说法，错误的是（ D ）
+A、abstract不能与final并列修饰同一个类
+B、abstract类中不可以有private的成员
+C、abstract方法必须在abstract类中
+D、static方法中能直接处理非static的属性
+
+6、	以下标识符中哪项是不合法的( C )
+A、BigMeaninglessName       B、$int
+C、1 st                      D、$1
+7、	main方法是Java Application程序执行的入口点，关于main方法的方法头以下哪项是合法的（ B ）
+A、public static void main（）            
+B、public static void main（String[ ] args）
+C、public static int main（String[ ] arg）   
+D、public void main（String arg[ ]）
+8、	执行完以下代码int [ ] x = new int[25]；后，以下哪项说明是正确的（ A ）
+A、x[24]为0    B、x[24]未定义      C、x[25]为0     D、x[0]为空
+9、	以下代码段执行后的输出结果为（  B ）
+int x=3； int y=10；
+System.out.println(y%x);
+A、0       B、1      C、2       D、3
+10、以下哪个表达式是不合法的（ B ）
+A、	String x="Hello"; int y=9; x+=y;
+B、	String x="Hello"; int y=9; if(x==y) { }
+C、	String x="Hello"; int y=9; x=x+y;
+D、String x=null; int y=(x!=null)&&(x.length()>0) ? x.length : 0
+11、编译运行以下程序后，关于输出结果的说明正确的是 （ C ）
+public class Conditional{
+public static void main(String args[ ]){
+int x=4;
+System.out.println("value is "+ ((x>4) ? 99.9 :9));
+}
+}
+A、输出结果为：value is 99.99     B、输出结果为：value is 9
+C、输出结果为：value is 9.0       D、编译错误
+12、以下声明合法的是（ D ）
+A、default String s；   B、public final static native int w( )
+C、abstract double d； D、abstract final double hyperbolicCosine( )
+13、关于以下application的说明，正确的是（ C ）
+1： class StaticStuff
+2： { 
+3： static int x=10；
+4： static { x+=5；}
+5： public static void main（String args[ ]）
+6： {
+7： System.out.println("x=" + x);
+8： }
+9： static { x/=3;}
+10： }
+A、4行与9行不能通过编译，因为缺少方法名和返回类型 
+B、9行不能通过编译，因为只能有一个静态初始化器
+C、编译通过，执行结果为：x=5
+D、编译通过，执行结果为：x=3
+14、关于以下程序代码的说明正确的是（ D ）
+1． class HasStatic{
+2． private static int x=100；
+3． public static void main(String args[ ]){
+4． HasStatic hs1=new HasStatic( );
+5． hs1.x++;
+6． HasStatic hs2=new HasStatic( );
+7． hs2.x++;
+8． hs1=new HasStatic( );
+9． hs1.x++;
+10． HasStatic.x--;
+11． System.out.println("x="+x);
+12． }
+13． }
+A、5行不能通过编译，因为引用了私有静态变量
+B、10行不能通过编译，因为x是私有静态变量
+C、程序通过编译，输出结果为：x=103
+D、程序通过编译，输出结果为：x=102
+15、以下选项中循环结构合法的是（ A c ）
+A、	while (int i<7)
+{ i++;
+System.out.println("i is "+i);
+}
+B、 int j=3;
+while(j)
+{ System.out.println(" j is "+j);
+}
+C、 int j=0;
+for(int k=0; j + k !=10; j++,k++)
+{ System.out.println(" j is "+ j + "k is"+ k);
+}
+D、 int j=0;
+do{
+System.out.println( "j is "+j++);
+if (j = = 3) {continue loop;}
+}while (j<10);
+16、类Test1定义如下：
+1．public class Test1{
+2． public float aMethod（float a，float b）{ }
+3． 
+4．} 
+将以下哪种方法插入行3是不合法的。（ B ）
+ A、public float aMethod（float a， float b，float c）{ }
+ B、public float aMethod（float c，float d）{ }
+   C、public int aMethod（int a， int b）{ }
+ D、private float aMethod（int a，int b，int c）{ }
+17、类Test1、Test2定义如下：
+1． public class Test1
+2．{ public float aMethod（float a，float b） throws
+3． IOException { }
+4． }
+5． public class Test2 extends Test1{
+6．
+7．}
+将以下哪种方法插入行6是不合法的。（A）
+A、	float aMethod（float a，float b）{ }
+B、	public int aMethod（int a，int b）throws Exception{ }
+C、	public float aMethod（float p，float q）{ }
+D、	public int aMethod（int a，int b）throws IOException{ }
+18、关于以下程序段，正确的说法是（ C）
+1． String s1="abc"+"def";
+2． String s2=new String（s1）；
+3． if（s1= =s2）
+4． System.out.println("= = succeeded");
+5． if (s1.equals(s2))
+6． System.out.println(".equals() succeeded");
+ A、行4与行6都将执行       B、行4执行，行6不执行
+ C、行6执行，行4不执行     D、行4、行6都不执行
+
+19、编译并运行以下程序（命令：java AB 1），关于运行结果的描述以下哪个选项是正确的（A ）
+class AB{
+public static void main(String [ ] args){
+long i=0;
+try{
+i=Integer.parseInt(args[0]);
+}catch(Exception e){ }
+
+switch(i)
+{case 0: System.out.println("0");
+case 1: System.out.println("1");
+default : System.out.println("default"); }
+}
+}
+A、编译出错    B、打印出“0”   C、打印出“1”    D、打印出“default”
+20、若JAVA程序中定义了3个类，编译后可生成（　　B　）个字节码文件。
+　A、4        B、3      C、2       D、1
+
+21、JAVA中采用Unicode编码，一个Unicode编码占用（　C　）字节。
+　A、 16     B、1       C、2       D、4
+22、不是构造函数特点的是（ D  ）
+  A、构造函数与类名相同        B、构造函数可带参数也可不带
+  C、构造函数带有返回类型      D、构造函数主要完成对类对象的初始工作
+

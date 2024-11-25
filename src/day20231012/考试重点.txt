@@ -1,0 +1,30 @@
+1、java的三大平台
+javaEE 标准版 javaSE 企业版 javaME 微型版
+2、jdk、jre、jvm之间的关系
+jdk包括jre，jre包括jvm
+jdk = java可执行命令+jre   jre = jvm+java类库
+3、java中的注释、java的常用可执行命令
+//单行注释
+/**/多行注释
+/** **/文档注释
+java
+javac
+javadoc
+4、变量名的命名规则
+驼峰命名
+5、自增、自减运算、逻辑运算符、三元运算符
+6、八大基本数据类型以及如何定义这些类型的变量
+int
+short
+float
+double
+long
+char
+boolean
+byte
+
+7、整数的默认类型，小数的默认类型以及不同数据类型之间的计算原则
+8、if语句的三种形式，switch语句的语法以及变量数据类型的范围
+9、循环+分支结构的运用(编程题)
+10、数组的定义方式
+11、java中类的定义

@@ -1,0 +1,33 @@
+题目 1:
+创建一个名为Person的Java类，具有私有属性name和age，以及公共构造函数和getAge方法。然后，创建一个Student类，继承自Person，具有一个额外的属性studentId，并覆盖getAge方法以返回学生的年龄。
+
+题目 2:
+编写一个Java程序，定义一个接口Shape，其中包含一个抽象方法calculateArea()。然后创建两个类，Circle和Rectangle，它们都实现了Shape接口，并分别计算圆形和矩形的面积。
+
+题目 3:
+创建一个名为BankAccount的Java类，具有私有属性balance（初始值为0.0）和以下方法：
+
+deposit(double amount)：向账户中存入指定金额。
+withdraw(double amount)：从账户中取出指定金额。
+getBalance()：返回当前余额。
+toString()：返回账户信息的字符串表示。
+题目 4:
+编写一个Java类Book，具有属性title、author、price，以及一个构造函数。然后创建一个BookStore类，该类包含一个书籍列表，并能够添加、删除和列出库存中的书籍。
+
+题目 5:
+创建一个Java类Employee，具有属性name、employeeId，以及一个抽象方法calculateSalary(). 然后创建两个子类Manager和Developer，每个子类都实现calculateSalary()方法，以不同的方式计算工资。
+
+题目 6:
+编写一个Java程序，模拟一个简单的银行账户系统。创建一个类BankAccount，具有属性accountNumber、holderName、balance，以及方法deposit()和withdraw()。另外，创建一个Bank类，该类包含一个ArrayList来管理多个账户，并实现查找特定账户、显示所有账户和计算总余额的功能。
+
+题目 7:
+创建一个名为Student的Java类，具有属性name和age，以及一个构造函数。然后创建一个Course类，该类包含一个课程名称属性和一个学生列表。实现方法来添加和删除学生，并计算平均年龄。
+
+题目 8:
+编写一个Java类Shape，具有属性color和一个抽象方法calculateArea(). 创建两个子类，Circle和Rectangle，分别实现calculateArea()方法以计算圆形和矩形的面积。
+
+题目 9:
+创建一个名为Person的Java类，具有属性name、age和gender，以及一个构造函数。然后创建一个Employee类，继承自Person，具有额外的属性employeeId，并覆盖toString()方法以返回员工信息的字符串表示。
+
+题目 10:
+编写一个Java程序，模拟一个简单的图书馆系统。创建一个类Library，具有属性books（保存图书列表）和方法borrowBook()和returnBook()，以实现图书的借阅和归还功能。还要实现一个方法listAvailableBooks()来列出可借阅的书籍。

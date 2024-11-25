@@ -1,0 +1,9 @@
+ 设计小狗类需求:
+抽象形成一个小狗类Dog
+属性: 名字name 年龄age 品种kind 主人host 价格price
+功能:
+跑run: 无参，打印: 小狗Dog跑的老快了~
+吃eat: 参数int n，打印: 小狗今晚要吃n根肉骨头
+睡觉sleep: 参数double num，打印: 小狗睡了num个小时0
+玩play: 参数String host，返回值 String“飞盘”，打印: 小狗与主人host玩的很开心
+叫bark: 打印: 小狗喜欢汪汪叫，封装此方法，玩play()的时候才bark()

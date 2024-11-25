@@ -1,0 +1,12 @@
+1、创建一个基类Animal，具有属性name和方法makeSound()。然后创建两个子类Dog和Cat，它们分别重写makeSound()方法以发出不同的声音。在main方法中，创建Dog和Cat对象，并调用它们的makeSound()方法。
+
+2、创建一个Java类Book，包含以下属性：
+
+title（标题）
+author（作者）
+price（价格）
+实现构造函数以初始化这些属性。然后编写方法displayInfo()，用于显示书的信息。在main方法中，创建几本书并调用displayInfo()方法。
+
+3、创建一个接口Playable，具有抽象方法play()。然后创建两个类Guitar和 Piano，实现Playable接口，并在每个类中实现play()方法以模拟各自乐器的演奏。在main方法中，创建Guitar和 Piano对象，并调用它们的play()方法。
+
+4、创建一个基类Shape，具有抽象方法calculateArea()。然后创建两个子类Triangle和 Square，分别实现该方法以计算三角形和正方形的面积。在main方法中，创建这些对象并计算它们的面积。
